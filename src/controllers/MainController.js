@@ -10,7 +10,7 @@ const SendCodeValidator = require('../validators/SendCodeValidator');
 const LoginValidator = require('../validators/LoginValidator');
 const RegisterValidator = require('../validators/RegisterValidator');
 const { hash } = require('bcrypt');
-const SmsHandler = require('../../sms/facades/SmsHandler');
+const { SmsHandler } = require('@farahub/sms/facades');
 
 
 class MainController extends Controller {
