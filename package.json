@@ -1,6 +1,6 @@
 {
     "name": "@farahub/authentication",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Authentication module for the Farahub framework",
     "repository": {
         "type": "git",
