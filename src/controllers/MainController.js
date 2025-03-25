@@ -68,7 +68,7 @@ class MainController extends Controller {
 
         // send code via sms
         if (!this.app.dev) {
-            const handler = SmsHandler.make();
+            const handler = SmsHandler.make(null, this.app.connection);
             await handler.sendMessage(code, [user.phone], {
                 'pattern': '8mg0fwx43vbwuro',
                 'params': { "code": code }
